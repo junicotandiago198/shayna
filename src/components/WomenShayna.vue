@@ -8,7 +8,7 @@
             
             <div class="product-item" v-for="itemProduct in products" v-bind:key="itemProduct.id">
               <div class="pi-pic">
-                <img src="img/mickey1.jpg" alt />
+                <img v-bind:src="itemProduct.galleries[0].photo" alt />
                 <ul>
                   <li class="w-icon active">
                     <a href="#">
